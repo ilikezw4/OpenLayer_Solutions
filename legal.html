@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rechtliches & Impressum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Sanftes Scrollen zu den Ankern (#imprint, #privacy etc.) */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fokus-Rahmen für Tastatur-Navigation (Barrierefreiheit) */
+        *:focus-visible {
+            outline: 3px solid #2563eb;
+            outline-offset: 2px;
+        }
+
+        /* Standard-Styling für Fließtext in rechtlichen Dokumenten */
+        .legal-content p {
+            margin-bottom: 1.25rem;
+            line-height: 1.6;
+            color: #334155; /* slate-700 */
+        }
+
+        .legal-content h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            color: #0f172a; /* slate-900 */
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+<main class="max-w-4xl mx-auto py-12 px-6">
+    <h1 class="text-4xl font-extrabold mb-12 text-slate-900 border-b pb-4">Rechtliche Informationen</h1>
+
+    <section id="imprint" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Impressum</h2>
+        <div class="bg-white p-8 shadow rounded-lg space-y-4 legal-content">
+            <p><strong>OpenLayer Solutions GmbH</strong></p>
+            <p>Technologiepark 1, 8010 Graz, Österreich</p>
+            <p><strong>Unternehmensgegenstand:</strong> Entwicklung und Vertrieb von Softwareoptimierungen für XR-Systeme</p>
+            <p><strong>UID-Nummer:</strong> ATU78945612 | <strong>Firmenbuchnummer:</strong> FN 123456 x</p>
+            <p><strong>Kontaktdaten:</strong> office@openlayer-solutions.at | +43 316 123456</p>
+            <p class="text-sm text-slate-500 italic text-right">Offenlegung gemäß § 25 Mediengesetz und Informationspflichten gemäß § 5 ECG.</p>
+        </div>
+    </section>
+
+    <section id="privacy" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Datenschutzerklärung</h2>
+        <div class="bg-white p-8 shadow rounded-lg legal-content">
+            <p class="text-sm text-slate-500 mb-6 font-mono">Stand: 15. Mai 2026</p>
+
+            <h3>1. Allgemeine Informationen</h3>
+            <p>Wir verarbeiten Ihre Daten ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2021).</p>
+
+            <h3>2. Datensparsamkeit & Telemetrie</h3>
+            <p>Unsere Software "Synthetix XR Optimizer" erhebt keine Telemetriedaten. Es erfolgt keine Übermittlung Ihres Nutzungsverhaltens.</p>
+
+            <h3>3. Cookies & Tracking</h3>
+            <p>Diese Website verwendet keine Tracking-Cookies. Wir nutzen lediglich technisch notwendige Session-Cookies zur Bereitstellung des Webshops.</p>
+
+            <p class="text-blue-600 font-medium italic">Vollständige Auskunft gemäß Art. 13 DSGVO kann jederzeit via E-Mail angefordert werden.</p>
+        </div>
+    </section>
+
+    <section id="license" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Lizenzvereinbarung (EULA)</h2>
+        <div class="bg-white p-8 shadow rounded-lg legal-content border-l-4 border-blue-600">
+            <h3>§1 Nutzungsrechte</h3>
+            <p>Mit dem Kauf erwirbt der Nutzer ein nicht-exklusives, zeitlich unbegrenztes Recht zur Nutzung der Software auf einem (1) Endgerät. Eine gewerbliche Weitervermietung ist untersagt.</p>
+
+            <h3>§2 Vorbehalt der Rechte</h3>
+            <p>Alle Urheberrechte und geistigen Eigentumsrechte an der Software verbleiben bei der OpenLayer Solutions GmbH. Quellcode-Analysen (Reverse Engineering) sind nicht gestattet.</p>
+
+            <h3>§3 Haftungsbeschränkung</h3>
+            <p>Die Software wird "wie besehen" bereitgestellt. Aufgrund der tiefen Systemintegration (Kernel-Modifikationen unter CachyOS) erfolgt die Nutzung auf eigene Gefahr. Die Haftung für indirekte Schäden, Datenverlust oder Hardwaredefekte wird – sofern gesetzlich zulässig – ausgeschlossen.</p>
+        </div>
+    </section>
+
+    <section id="credits" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Mediennachweise</h2>
+        <div class="bg-white p-8 shadow rounded-lg">
+            <ul class="space-y-4">
+                <li class="flex flex-col border-b pb-2">
+                    <span class="font-bold text-slate-800">Hero-Bild (Startseite)</span>
+                    <span class="text-sm">Titel: <em>DJI Goggles</em> | Urheber: Gunnar Behrens</span>
+                    <span class="text-sm">Quelle: <a href="https://commons.wikimedia.org/wiki/File:DJI_Goggles.jpg" class="text-blue-600 underline">Wikimedia Commons</a></span>
+                    <span class="text-sm">Lizenz: <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-blue-600 underline">CC BY-SA 4.0</a></span>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

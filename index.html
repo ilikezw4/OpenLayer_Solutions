@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenLayer Solutions | Synthetix XR Optimizer</title>
+    <!-- Tailwind CSS für schnelles, konsistentes Design (Aufgabe 1) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fokus-Styles für bessere Barrierefreiheit */
+        *:focus {
+            outline: 3px solid #2563eb;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+<!-- Navigation -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Hauptnavigation">
+        <div class="flex items-center space-x-2">
+            <!-- Wort-Bildmarke (Aufgabe 3) -->
+            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">O</div>
+            <span class="text-xl font-bold tracking-tight">OpenLayer <span class="text-blue-600">Solutions</span></span>
+        </div>
+        <ul class="hidden md:flex space-x-8 font-medium">
+            <li><a href="#product" class="hover:text-blue-600 transition">Produkt</a></li>
+            <li><a href="about.html" class="hover:text-blue-600 transition">Über uns</a></li>
+            <li><a href="legal.html" class="hover:text-blue-600 transition">Rechtliches</a></li>
+        </ul>
+        <a href="#buy" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Shop</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Sektion -->
+    <section id="product" class="py-20 bg-gradient-to-b from-white to-slate-50">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl font-extrabold leading-tight mb-6">
+                    VR-Performance auf Linux, <br><span class="text-blue-600">neu definiert.</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8">
+                    Optimieren Sie Ihre OpenXR-Workflows mit dem Synthetix XR Optimizer.
+                    Minimale Latenz für Pico 4 und CachyOS.
+                </p>
+                <div class="flex space-x-4">
+                    <button onclick="mockPurchase()" id="buy" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold text-lg hover:shadow-lg transition">
+                        Jetzt kaufen – 49,99€
+                    </button>
+                </div>
+            </div>
+            <div class="bg-slate-200 rounded-2xl aspect-video flex items-center justify-center shadow-inner">
+                <figure class="relative overflow-hidden rounded-2xl shadow-2xl">
+                    <img src="assets/DJI_Goggles.jpg"
+                         alt="Weiße VR-Brille auf einem schwarzen Modellkopf – Repräsentiert die Hardware-Kompatibilität von Synthetix XR"
+                         class="w-full h-auto">
+                    <figcaption class="text-xs text-slate-500 mt-2 italic">
+                        Bild: <a href="https://commons.wikimedia.org/wiki/File:DJI_Goggles.jpg" class="underline">DJI Goggles</a> von <a href="https://commons.wikimedia.org/wiki/User:Gunnar_Behrens" class="underline">Gunnar Behrens</a>, lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="underline">CC BY-SA 4.0</a>.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Mock Feedback (JS) -->
+    <div id="status-message" class="hidden container mx-auto px-6 mb-10">
+        <div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded" role="alert">
+            <p class="font-bold">Erfolg!</p>
+            <p id="license-key-display"></p>
+        </div>
+    </div>
+</main>
+
+<!-- Footer mit Impressum-Link (Aufgabe 6) -->
+<footer class="bg-slate-900 text-slate-300 py-12 mt-20">
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+        <div>
+            <p class="font-bold text-white mb-4">OpenLayer Solutions GmbH</p>
+            <p>Technologiepark 1<br>8010 Graz, Österreich</p>
+        </div>
+        <div>
+            <p class="font-bold text-white mb-4">Links</p>
+            <ul class="space-y-2">
+                <li><a href="legal.html#privacy" class="hover:text-white">Datenschutz</a></li>
+                <li><a href="legal.html#imprint" class="hover:text-white">Impressum</a></li>
+                <li><a href="legal.html#license" class="hover:text-white">Lizenzbedingungen</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="font-bold text-white mb-4">Barrierefreiheit</p>
+            <a href="accessibility.html" class="underline hover:text-white">Erklärung zur Barrierefreiheit</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Mocking des Kaufprozesses (Aufgabe 0 & JavaScript Demo)
+    function mockPurchase() {
+        const statusDiv = document.getElementById('status-message');
+        const keyDisplay = document.getElementById('license-key-display');
+
+        // Generiere einen zufälligen Key
+        const key = "S-XR-" + Math.random().toString(36).substr(2, 9).toUpperCase();
+
+        keyDisplay.innerText = "Ihr Download ist bereit. Lizenzschlüssel: " + key;
+        statusDiv.classList.remove('hidden');
+
+        // Scroll zum Erfolg (Barrierefreiheit: Nutzer informieren)
+        statusDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+</body>
+</html>

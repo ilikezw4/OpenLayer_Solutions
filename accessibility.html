@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barrierefreiheit | OpenLayer Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *:focus-visible {
+            outline: 3px solid #2563eb;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+<header class="bg-white shadow-sm">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Hauptnavigation">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold italic">O</div>
+            <span class="text-xl font-bold">OpenLayer <span class="text-blue-600">Solutions</span></span>
+        </div>
+        <ul class="flex space-x-8 font-medium">
+            <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-blue-600 transition">Über uns</a></li>
+            <li><a href="legal.html" class="hover:text-blue-600 transition">Rechtliches</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container mx-auto px-6 py-16 max-w-3xl">
+    <div class="bg-white p-10 shadow-sm rounded-2xl border border-slate-200">
+
+        <h1 class="text-3xl font-extrabold mb-8 text-slate-900 border-b pb-4">
+            Barrierefreiheitserklärung
+        </h1>
+
+        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+            OpenLayer Solutions bemüht sich, den Webshop im Einklang mit den Richtlinien für barrierefreie Webinhalte
+            <strong class="text-blue-600 font-bold">WCAG 2.2 auf Stufe AA</strong> zugänglich zu machen.
+        </p>
+
+        <section class="space-y-8">
+            <div>
+                <h2 class="text-xl font-bold mb-3">Konformitätsstatus</h2>
+                <p class="text-slate-700">
+                    Diese Website ist vollständig konform mit den Anforderungen der WCAG 2.2 AA.
+                    Die Überprüfung erfolgt regelmäßig mithilfe automatisierter Test-Tools wie
+                    <span class="font-semibold text-slate-900 font-mono">WAVE</span> und
+                    <span class="font-semibold text-slate-900 font-mono">AXE DevTools</span>.
+                </p>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                <h2 class="text-xl font-bold mb-4 text-blue-900">Besondere Features</h2>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="mr-3 text-blue-600" aria-hidden="true">✓</span>
+                        <span><strong>Hohe Kontrastverhältnisse:</strong> Alle Texte erfüllen die Mindestkontrastanforderungen für optimale Lesbarkeit.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-blue-600" aria-hidden="true">✓</span>
+                        <span><strong>Tastatur-Navigation:</strong> Die gesamte Website ist ohne Maus voll bedienbar. Fokus-Indikatoren sind jederzeit klar sichtbar.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-3 text-blue-600" aria-hidden="true">✓</span>
+                        <span><strong>Screenreader-Optimierung:</strong> Einsatz von semantischem HTML5 und ARIA-Labels zur Unterstützung assistiver Technologien.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="mt-12 pt-8 border-t border-slate-100 text-sm text-slate-500 italic">
+            Sollten Ihnen Barrieren auffallen, kontaktieren Sie uns bitte unter: office@openlayer-solutions.at
+        </footer>
+    </div>
+</main>
+
+<footer class="bg-slate-900 text-slate-400 py-8">
+    <div class="container mx-auto px-6 text-center text-sm">
+        &copy; 2026 OpenLayer Solutions GmbH. Alle Rechte vorbehalten.
+    </div>
+</footer>
+
+</body>
+</html>

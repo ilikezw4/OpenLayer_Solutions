@@ -1,0 +1,10 @@
+{
+  "name": "OpenLayer_Solutions",
+  "version": "1.0.0",
+  "description": "Synthetix XR Optimizer - High Performance VR Solution for Linux (CachyOS)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lukas Brumueller / OpenLayer Solutions GmbH",
+  "private": true
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Sanftes Scrollen zu den Ankern (#imprint, #privacy etc.) */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fokus-Rahmen für Tastatur-Navigation (Barrierefreiheit) */
+        *:focus-visible {
+            outline: 3px solid #2563eb;
+            outline-offset: 2px;
+        }
+
+        /* Standard-Styling für Fließtext in rechtlichen Dokumenten */
+        .legal-content p {
+            margin-bottom: 1.25rem;
+            line-height: 1.6;
+            color: #334155; /* slate-700 */
+        }
+
+        .legal-content h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            color: #0f172a; /* slate-900 */
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold italic">O</div>
+            <span class="text-xl font-bold">OpenLayer <span class="text-blue-600">Solutions</span></span>
+        </div>
+        <ul class="flex space-x-8 font-medium">
+            <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+            <li><a href="about.html" class="text-blue-600">Über uns</a></li>
+            <li><a href="legal.html" class="hover:text-blue-600 transition">Rechtliches</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container mx-auto px-6 py-16 max-w-5xl">
+    <section class="mb-20 text-center">
+        <h1 class="text-4xl font-extrabold mb-4">We cook the best XR Performance.</h1>
+        <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+            OpenLayer Solutions wurde 2026 in Graz gegründet. Unser 5-köpfiges Team aus Linux-Kernel-Enthusiasten und VR-Entwicklern arbeitet täglich daran, die Barrieren zwischen Hardware und Open-Source-Betriebssystemen einzureißen.
+        </p>
+    </section>
+
+    <hr class="my-16 border-slate-200">
+
+    <section id="branding">
+        <h2 class="text-3xl font-bold mb-8">Unsere Identität (Marken)</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <div class="text-blue-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Wort-Bildmarke</h3>
+                <p class="text-slate-600 text-sm mb-4">Das blaue Schild-Prisma kombiniert mit dem "OpenLayer" Schriftzug in Inter-Bold.</p>
+                <span class="text-xs font-mono bg-blue-50 text-blue-700 px-2 py-1 rounded">Nizza-Klasse 9 & 42</span>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <div class="text-blue-600 mb-4 text-4xl">⬢</div>
+                <h3 class="text-xl font-bold mb-2">Formmarke</h3>
+                <p class="text-slate-600 text-sm mb-4">Das spezifische hexagonale Gehäuse unseres externen XR-Beschleunigers (Hardware-Dongle).</p>
+                <span class="text-xs font-mono bg-blue-50 text-blue-700 px-2 py-1 rounded">Nizza-Klasse 9</span>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <div class="text-blue-600 mb-4">
+                    <button onclick="playMockSound()" class="bg-slate-100 hover:bg-slate-200 p-3 rounded-full transition" aria-label="Hörmarke abspielen">
+                        ▶️
+                    </button>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Hörmarke</h3>
+                <p class="text-slate-600 text-sm mb-4">Ein 2-sekündiger, ansteigender digitaler Klangteppich beim Initialisieren der Software.</p>
+                <span class="text-xs font-mono bg-blue-50 text-blue-700 px-2 py-1 rounded">Nizza-Klasse 9</span>
+            </div>
+
+        </div>
+
+        <div class="mt-12 bg-blue-900 text-white p-8 rounded-2xl">
+            <h3 class="text-lg font-bold mb-2">Markenschutz & Recherche</h3>
+            <p class="text-sm opacity-90">
+                Alle Marken wurden via <strong>EUIPO eSearch</strong> und <strong>TMview</strong> auf Kollisionen geprüft. Die Farbwahl (OpenLayer-Blue, #2563eb) wurde bewusst gewählt, um technologische Seriosität zu vermitteln, ohne bestehende Marken im Bereich XR-Software (z.B. Meta, Valve) zu imitieren.
+            </p>
+        </div>
+    </section>
+</main>
+
+<script>
+    function playMockSound() {
+        console.log("Play Sound: Synth-Rise (2s)");
+        alert("Hier würde die Hörmarke (Digitaler Rising-Sound) abgespielt werden.");
+    }
+</script>
+</body>
+</html>
