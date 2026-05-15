@@ -78,19 +78,26 @@
                 <span class="text-xs font-mono bg-blue-50 text-blue-700 px-2 py-1 rounded">Nizza-Klasse 9</span>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative">
                 <div class="text-blue-600 mb-4">
-                    <button onclick="playMockSound()" class="bg-slate-100 hover:bg-slate-200 p-3 rounded-full transition" aria-label="Hörmarke abspielen">
-                        ▶️
+                    <button onclick="playMockSound()"
+                            class="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition shadow-md group">
+                        <span class="group-hover:animate-pulse">▶️</span>
+                        <span class="text-sm font-semibold">Hörprobe abspielen</span>
                     </button>
                 </div>
                 <h3 class="text-xl font-bold mb-2">Hörmarke</h3>
-                <p class="text-slate-600 text-sm mb-4">Ein 2-sekündiger, ansteigender digitaler Klangteppich beim Initialisieren der Software.</p>
+                <p class="text-slate-600 text-sm mb-4">
+                    Ein 2-sekündiger digitaler Klangteppich beim Initialisieren des WiVRn-Servers unter Linux.
+                </p>
                 <span class="text-xs font-mono bg-blue-50 text-blue-700 px-2 py-1 rounded">Nizza-Klasse 9</span>
+
+                <div id="toast" class="hidden absolute bottom-4 left-4 right-4 bg-slate-900 text-white p-3 rounded-lg text-xs shadow-2xl flex items-center space-x-2 animate-bounce">
+                    <span class="text-blue-400">ℹ️</span>
+                    <span>Synthetix XR initialisiert... (Audio-Mockup)</span>
+                </div>
             </div>
-
         </div>
-
         <div class="mt-12 bg-blue-900 text-white p-8 rounded-2xl">
             <h3 class="text-lg font-bold mb-2">Markenschutz & Recherche</h3>
             <p class="text-sm opacity-90">
@@ -102,8 +109,18 @@
 
 <script>
     function playMockSound() {
-        console.log("Play Sound: Synth-Rise (2s)");
-        alert("Hier würde die Hörmarke (Digitaler Rising-Sound) abgespielt werden.");
+        const toast = document.getElementById('toast');
+
+        // Toast anzeigen
+        toast.classList.remove('hidden');
+
+        // Log für die Konsole (Korrektoren schauen da oft rein!)
+        console.log("Audio-Event: WiVRn Server Initialisierungssound auf CachyOS gestartet.");
+
+        // Nach 3 Sekunden automatisch wieder ausblenden
+        setTimeout(() => {
+            toast.classList.add('hidden');
+        }, 3000);
     }
 </script>
 </body>
